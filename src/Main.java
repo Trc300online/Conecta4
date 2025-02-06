@@ -1,5 +1,10 @@
 public class Main {
+
+    private int[][] gameBoard = new int[7][6];
+
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+        
+       int counter = SetPlayers.decidePlayer();
+
     }
 }
