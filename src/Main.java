@@ -7,6 +7,12 @@ public class Main {
 
        while (gameContinues) {
            int[][] board = GameBoard.getGameBoard();
+           int move = Movement.getMove(counter);
+           if (move == 10) {
+               System.out.println("nombre de columna invalid, intentau-ho un altra vegada");
+           } else {
+               
+           }
        }
 
     }
