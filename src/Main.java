@@ -11,6 +11,13 @@ public class Main {
            if (move == 10) {
                System.out.println("nombre de columna invalid, intentau-ho un altra vegada");
            } else {
+               int row = Movement.getRow(move, board);
+               if (row == 10) {
+                   System.out.println("La columna es plena.");
+               } else {
+                   board[move][row] = counter;
+                   GameBoard.setGameBoard(board);
+               }
                
            }
        }

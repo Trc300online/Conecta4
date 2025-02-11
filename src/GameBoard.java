@@ -5,4 +5,8 @@ public class GameBoard {
     public static int[][] getGameBoard() {
         return gameBoard;
     }
+
+    public static void setGameBoard(int[][] gameBoard) {
+        GameBoard.gameBoard = gameBoard;
+    }
 }

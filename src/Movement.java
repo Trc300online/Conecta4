@@ -18,4 +18,16 @@ public class Movement {
         }
     }
 
+    public static int getRow(int column, int[][] board){
+        int row;
+        for (int y = 0; y < 6; y++){
+            if (board[column][y] == 0){
+                row = y;
+                return row;
+            }
+        }
+        row = 10;
+        return row;
+    }
+
 }
