@@ -17,6 +17,7 @@ public class Main {
                } else {
                    board[move][row] = counter;
                    GameBoard.setGameBoard(board);
+                   Screen.printBoard(GameBoard.getGameBoard());
                }
                
            }
