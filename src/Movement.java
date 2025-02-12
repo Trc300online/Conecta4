@@ -13,8 +13,8 @@ public class Movement {
             } else {
                 return move;
             }
-        } catch (Exception e){
-            return 10;
+        } catch (NumberFormatException nfe){
+            return 11;
         }
     }
 
