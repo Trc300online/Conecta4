@@ -8,13 +8,13 @@ public class Movement {
         System.out.println("Torn del jugador " + counter + ". Introduir la columna on introduir la fitxa:");
         try{
             move = Integer.parseInt(scanner.next());
-            if (move > 6 || move < 0) {
-                return 10;
+            if (move > GameBoard.gameBoard.length || move < 1) {
+                return 0;
             } else {
                 return move;
             }
         } catch (NumberFormatException nfe){
-            return 11;
+            return -1;
         }
     }
 
