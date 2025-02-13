@@ -15,3 +15,5 @@ public class GameBoard {
     }
 
 }
+// win conditions
+// check column full
