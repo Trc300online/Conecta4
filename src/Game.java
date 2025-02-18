@@ -19,6 +19,7 @@ public class Game {
                 board[move][row] = counter;
                 GameBoard.setGameBoard(board);
                 Screen.printBoard(GameBoard.getGameBoard());
+                gameContinues =
             }
             /**/
 
