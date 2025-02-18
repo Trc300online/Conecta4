@@ -19,7 +19,15 @@ public class Game {
                 board[move][row] = counter;
                 GameBoard.setGameBoard(board);
                 Screen.printBoard(GameBoard.getGameBoard());
-                gameContinues =
+                gameContinues = GameBoard.checkWinCondHV(move, row, counter, board);
+                if (gameContinues) {
+                    gameContinues = GameBoard.checkWinCondD(move, row, counter, board);
+                }
+                if (counter == 1){
+                    counter = 2;
+                } else {
+                    counter = 1;
+                }
             }
             /**/
 

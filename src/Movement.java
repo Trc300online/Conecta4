@@ -3,12 +3,11 @@ import java.util.Scanner;
 public class Movement {
 
     public static int getMove(int counter){
-        int move;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Torn del jugador " + counter + ". Introduir la columna on introduir la fitxa:");
         try{
-            move = Integer.parseInt(scanner.next());
-            if (move > GameBoard.gameBoard.length || move < 1) {
+            int move = Integer.parseInt(scanner.next());
+            if (move > GameBoard.columns || move < 1) {
                 return 0;
             } else {
                 return move;
@@ -19,15 +18,12 @@ public class Movement {
     }
 
     public static int getRow(int column, int[][] board){
-        int row;
-        for (int y = 0; y < 6; y++){
+        for (int y = 0; y < GameBoard.rows; y++){
             if (board[column][y] == 0){
-                row = y;
-                return row;
+                return y;
             }
         }
-        row = 10;
-        return row;
+        return 10;
     }
 
 }
