@@ -22,10 +22,6 @@ public class Game {
             if (move == -1 || move == -2){
                 Screen.errorMng(move);
             }
-            /*if (move == -1) {
-                Screen.errorInvNumb();
-            } else if (move == -2) {
-                Screen.errorInvString();*/
              else {
                 int row = gameBoard.getRow(move, board);
                 if (row == 10) {

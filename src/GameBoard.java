@@ -33,7 +33,6 @@ public class GameBoard {
     public static boolean checkWinConditions(int moveX, int moveY, int counter) {
         boolean result = checkWinCondHV(moveX, moveY, counter) && checkWinCondD(moveX, moveY, counter);
         if (!result) {
-           // System.out.println("Jugador " + counter + " ha guanyat!");
             Screen.winner(counter);
         }
         return result;

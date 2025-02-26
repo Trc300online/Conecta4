@@ -40,12 +40,4 @@ public class Screen {
     public static void winner(int counter){
             System.out.println("Jugador " + counter + " ha guanyat!");
     }
-
-    /*public static void errorInvNumb(){
-        System.out.println("Nombre de columna invàlid, intenteu-ho una altra vegada");
-    }
-
-    public static void errorInvString(){
-        System.out.println("Línies de text no acceptades, si us plau introduïu un valor numèric");
-    }*/
 }
